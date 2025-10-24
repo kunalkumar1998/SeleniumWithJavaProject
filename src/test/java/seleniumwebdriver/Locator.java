@@ -62,38 +62,7 @@ public class Locator {
 	
 		
 		//
-//		WebElement editOnTheme = driver.findElement(By.xpath("//em[text() =\"editOneTheme\"]"));
-//		editOnTheme.click();
-		
-	
-//		//by partial Link Text
-//		WebElement noticePeriod = driver.findElement(By.xpath("//span[@data-value=\"1 Month\"]"));
-//		WebElement noticePeriod15days =  driver.findElement(By.xpath("//span[@data-value=\"15 Days or less\"]"));
 
-//		if (noticePeriod.isDisplayed()) {
-//
-//		if(!noticePeriod.isSelected()) {
-//			
-//			noticePeriod.click();
-//		}
-//		else if((noticePeriod.isSelected())) {
-//			noticePeriod15days.click();
-//			
-//		}
-//		else {
-//			System.out.println("Already Selected   ");
-//		}
-//
-//		}
-//		else {
-//			System.out.println("element not visible");
-//		}
-		
-//		//by id
-//		WebElement save = driver.findElement(By.xpath("(//a[text()='Cancel'])[3]"));
-//				
-//		save.click();
-		
 		//By xpath
 		WebElement jobs= driver.findElement(By.xpath("//div[text()='Jobs']"));
 		jobs.click();
@@ -132,113 +101,13 @@ public class Locator {
         );
         applyButton.click();
 
-      WebElement question = driver.findElement(By.xpath("//span[text()='What is your current CTC per annum in lakhs? (Mention Only Number) (For e.g. 10)']"));
-//		mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-		if(question.isDisplayed()) {
-			WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-			answer.sendKeys("5");
-			WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-			save.click();
-		}
-		
+      
+        
+     
+  WebElement cancel = driver.findElement(By.xpath("//div[@class=\"crossIcon chatBot chatBot-ic-cross\"]"));
+  cancel.click();
+  
 
-	      WebElement question1 = driver.findElement(By.xpath("//span[text()='What is your notice period?']"));
-//			mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-			if(question1.isDisplayed()) {
-				WebElement answer = driver.findElement(By.xpath("//label[@for=\"15 Days or less\"]"));
-				answer.click();
-				WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-				save.click();
-			}
-			  WebElement question2 = driver.findElement(By.xpath("//span[text()='If you have to rate yourself based on your experience on Manual Testing ? (1-10)']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question2.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("9");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				
-				WebElement question3 = driver.findElement(By.xpath("//span[text()='If you have to rate yourself based on your experience on Automation Testing ? (1-10)']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question3.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("9");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				
-				WebElement question4 = driver.findElement(By.xpath("//span[text()='Please mention last working day if serving notice or not working currently']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question4.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("30 Oct 2025");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				WebElement question5 = driver.findElement(By.xpath("//span[text()='How many years of experience do you have in Html/Css?']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question5.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("2.5");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				WebElement question6 = driver.findElement(By.xpath("//span[text()='Please select the city you are currently residing or willing to relocate to']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question6.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div//label[@for=\"Bengaluru, Karnataka\"]"));
-					answer.click();
-					WebElement answer1 =driver.findElement(By.xpath("//div//label[//label[@for=\"Noida, Uttar Pradesh\"]"));
-					answer1.click();
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				
-				WebElement question7 = driver.findElement(By.xpath("//span[text()='What is your expected CTC per annum in lakhs? (Mention Only Number) (For e.g. 10)']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question7.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("10");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				WebElement question8 = driver.findElement(By.xpath("//span[text()='If you have to rate yourself based on your experience on API Testing ? (1-10)']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question8.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("9");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				
-				WebElement question9 = driver.findElement(By.xpath("//span[text()='If you have to rate yourself based on your experience on Database Testing ? (1-10)']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question9.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("9");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				
-				WebElement question10 = driver.findElement(By.xpath("//span[text()='Are you currently residing in Delhi- NCR and open to work from office ?']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question10.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//label[@for=\"Yes\"]"));
-					answer.click();
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				
-				WebElement question11 = driver.findElement(By.xpath("//span[text()='How many years of experience do you have in Java Selenium?']"));
-//				mywait.until(ExpectedConditions.visibilityOfAllElements(question));
-				if(question11.isDisplayed()) {
-					WebElement answer = driver.findElement(By.xpath("//div[@data-placeholder=\"Type message here...\"]"));
-					answer.sendKeys("3");
-					WebElement save = driver.findElement(By.xpath("//div[text() ='Save']"));
-					save.click();
-				}
-				
 		//driver.close();
 	}
 	
