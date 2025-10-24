@@ -19,8 +19,9 @@ public class WebdriverWaitMethods {
  
 		//initialize Webdriver
 	   WebDriver driver = new ChromeDriver();
+	   
 		//Java provide sleep
-	  // Thread.sleep(2000);
+	    // Thread.sleep(2000);
 	   
 	   //Implicit wait Explicit Wait Fluent wait
 	   //Implicity wait 

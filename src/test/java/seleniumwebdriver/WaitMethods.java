@@ -1,6 +1,8 @@
 package seleniumwebdriver;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -34,16 +36,34 @@ public class WaitMethods {
 		
 		//navigation Methods
 		driver.navigate().back();
+		System.out.println(driver.getCurrentUrl());
 		
 		driver.getTitle();
 		System.out.println(driver.getTitle());
 		
 		//navigation Methods
 		driver.navigate().forward();
+		System.out.println(driver.getCurrentUrl());
 		
 		driver.getTitle();
 		System.out.println(driver.getTitle());
 	
+		driver.navigate().refresh();
+		System.out.println(driver.getCurrentUrl());
+		
+		Set<String> windowIds = driver.getWindowHandles();
+		
+		//Approach1
+		List<String> windowlist =new ArrayList(windowIds);
+		
+		String parentid = windowlist.get(0);
+		String childid = windowlist.get(1);
+		
+		driver.switchTo().window(childid);
+		System.out.println(driver.getTitle());
+		
+		
+		
 		
 	}
 
