@@ -39,8 +39,6 @@ public class TypesOfLocator {
 	  //partialLinkText
 	    WebElement guitext = driver.findElement(By.partialLinkText("GUI Ele"));
 	    guitext.isDisplayed();
-	    
-	    
 	
 	    //linkText
 	    WebElement guiElements =driver.findElement(By.linkText("GUI Elements"));
