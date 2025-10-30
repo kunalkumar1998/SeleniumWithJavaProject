@@ -21,13 +21,13 @@ public class IframeHandling {
 		
 		driver.switchTo().frame(frame);
 		driver.findElement(By.cssSelector("input[name=\"mytext3\"]")).sendKeys("Kunal Kumar");
-        driver.switchTo().frame(0);    
-		
-		driver.findElement(By.xpath("//*[@id='i9']//div[@class='AB7Lab Id5V1']")).click();
+//        driver.switchTo().frame(0);    
+//		
+//		driver.findElement(By.xpath("//*[@id='i9']//div[@class='AB7Lab Id5V1']")).click();
 		
 		driver.switchTo().defaultContent();
 		
-		//frame 
+		//frame  
 		WebElement frame1 =driver.findElement(By.xpath("//frame[@src='frame_2.html']"));
 		
 		driver.switchTo().frame(frame1);
