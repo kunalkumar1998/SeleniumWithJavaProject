@@ -11,7 +11,7 @@ public class HashMap {
 		// TODO Auto-generated method stub
 
 		
-		 HashMap<Integer,String> hm = new HashMap<Integer,String>();
+	 HashMap<Integer, String> hm = new HashMap<Integer,String>();
 	        
 	        hm.put(101, "kunal");
 	        hm.put(103, "kumar");
